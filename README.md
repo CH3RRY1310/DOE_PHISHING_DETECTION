@@ -23,6 +23,21 @@ C:/Users/USER/AppData/Local/Python/pythoncore-3.14-64/python.exe -m streamlit ru
 
 Open `http://localhost:8501`.
 
+## Deploy on Streamlit Community Cloud
+
+The app does not need the raw CSV datasets at runtime. It loads the trained model and metadata from `prototype_artifacts/`, so the GitHub repository is sufficient for deployment.
+
+1. Open [share.streamlit.io](https://share.streamlit.io/) and sign in with GitHub.
+2. Select **New app**.
+3. Choose repository `CH3RRY1310/DOE_PHISHING_DETECTION`.
+4. Select branch `main`.
+5. Set the main file path to `app.py`.
+6. Click **Deploy**.
+
+Streamlit Cloud installs the packages from `requirements.txt`. After the app starts, share the generated `streamlit.app` URL with evaluators.
+
+For a private repository, authorize Streamlit Cloud to access the repository when prompted. Do not add passwords, tokens, or other secrets to the repository.
+
 ## Reproduce the prototype model
 
 ```powershell
