@@ -43,8 +43,9 @@ st.markdown(
     .probability { color: var(--ink); font: 500 1rem 'DM Mono', monospace; }
     .section-kicker { border-top: 1px solid var(--line); padding-top: 1rem; margin-top: 2.5rem; color: var(--teal); font: 500 .76rem 'DM Mono', monospace; letter-spacing: .08em; text-transform: uppercase; }
     .stTextInput input { background: white; border: 1px solid var(--line); border-radius: 2px; color: var(--ink); font: 400 1rem 'DM Mono', monospace; padding: .85rem; }
-    .stButton button, .stDownloadButton button { border-radius: 2px; border: 1px solid var(--teal); background: var(--teal); color: white; font-family: 'Space Grotesk', sans-serif; font-weight: 600; }
-    .stButton button:hover, .stDownloadButton button:hover { border-color: var(--ink); background: var(--ink); color: white; }
+    .stButton button, .stDownloadButton button, [data-testid="stFormSubmitButton"] button { border-radius: 2px; border: 1px solid var(--teal); background: var(--teal); color: #ffffff !important; font-family: 'Space Grotesk', sans-serif; font-weight: 600; }
+    .stButton button *, .stDownloadButton button *, [data-testid="stFormSubmitButton"] button * { color: #ffffff !important; }
+    .stButton button:hover, .stDownloadButton button:hover, [data-testid="stFormSubmitButton"] button:hover { border-color: var(--ink); background: var(--ink); color: #ffffff !important; }
     [data-testid="stMetric"] { background: white; border: 1px solid var(--line); padding: 1rem; }
     [data-testid="stMetricLabel"] { font-family: 'DM Mono', monospace; color: var(--muted); }
     [data-testid="stMetricValue"] { font-family: 'Space Grotesk', sans-serif; color: var(--ink); }
