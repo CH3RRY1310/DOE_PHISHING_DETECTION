@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Local Streamlit state
+.streamlit/
+
+# Raw datasets: keep local or publish through Git LFS/external storage
+*.csv
+
+# Generated experiment outputs
+combined_model_results/
+common_cross_dataset_results/
+dataset_a_models/
+dataset_b_evaluation/
+dataset_c_evaluation/
+definitive_cross_dataset_results/
+domain_disjoint_results/
+frozen_experiment_results/
+grouped_cross_dataset_results/
+leakage_analysis/
+feature_ablation_results/
+shap_results/
+
+# Keep the deployment model and validation outputs tracked
+!prototype_artifacts/
+!prototype_artifacts/**
+!prototype_validation_results/
+!prototype_validation_results/**
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/*.log
